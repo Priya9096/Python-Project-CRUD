@@ -1,0 +1,30 @@
+{% extends "FoodApp/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item List</title>
+</head>
+<body>
+    {% block body %}
+    {% for i in item_list %}
+<div class='row'>
+<div class='col-md-2'></div>
+<div class='col-md-4'>
+    <img class='card' src={{i.item_image}} height=150px>
+</div>
+<br><br>
+<div class='col-md-3' style='font-family:cursive;font-weight:bold;font-size:20px'>{{i.item_name}}</div>
+
+<div class='col-md-2'>
+    <a href={% url 'FoodApp:details' i.id %} class="btn btn-success" style="background-color:black;" >
+        Details
+    </a>
+</div>
+</div>
+<br><br>
+{% endfor %}
+{% endblock %}
+</body>
+</html>

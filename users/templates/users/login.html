@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodnest Business app Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            background-color: orange;
+            font-family: cursive;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-group input {
+            border: 2px solid;
+            width: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 12px;
+            margin: 9px;
+        }
+        .form-container form {
+            background-color: white;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 3px grey;
+            text-align: center;
+            padding: 30px;
+        }
+        .form-container form a {
+            text-decoration: none;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            margin-left: 9px;
+            display: inline-block;
+            margin-top: 20px; /* Adjust as needed */
+            text-align: center;
+            padding: 10px 20px;
+            background-color: orangered;
+            border-radius: 12px;
+            transition: background-color 0.3s ease;
+        }
+        .form-container form a:hover {
+            background-color: darkorange;
+        }
+        .form-container form button {
+            width: 100%;
+            background-color: orangered;
+            border: none;
+            padding: 9px;
+            border-radius: 9px;
+            color: white;
+            font-weight: bold;
+            font-family: cursive;
+            margin: 4px;
+        }
+        .form-container input[type='email']:focus + label {
+            position: absolute;
+            margin-top: -69px;
+            margin-left: 15px;
+            background-color: white;
+        }
+        .form-container input[type='email']:not(:focus) + label,
+        .form-container input[type='password']:not(:focus) + label {
+            display: none;
+        }
+        .form-container input[type='password']:focus + label {
+            margin-top: -70px;
+            margin-left: 18px;
+            position: absolute;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form method='POST'>
+            {% csrf_token %}
+            {% for field in form %}
+            <div class='form-group'>
+                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                {{ field }}
+            </div>
+            {% endfor %}
+            <input type="hidden" name="next" value="{% url 'FoodApp:home' %}">
+            <p>Don't have an account? <a href="{% url 'users:reg' %}" class="register-link">Register</a></p>
+            <button type='submit'>Login</button>
+        </form>
+    </div>
+</body>
+</html>
