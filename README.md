@@ -1,3 +1,5 @@
+
+
 # Django CRUD with Authentication  
 
 A **Django-based web application** that allows users to **perform CRUD operations** (Create, Read, Update, Delete) after authentication. Users can **register, log in, log out**, and manage their data securely.  
@@ -14,9 +16,7 @@ A **Django-based web application** that allows users to **perform CRUD operation
 - **Frontend:** HTML, CSS, Bootstrap  
 - **Authentication:** Django Authentication System  
 
-## 📌 Installation & Setup  
+## 🎥 Watch the Explanation on YouTube 
+📺 **(https://youtube.com/playlist?list=PLp4WMXO7ORJENk0QPM_M-YS0rHGEjqjAG&si=oYBenPSvBeR1BYOi)**  
 
-1. **Clone the repository**  
-   ```sh
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+
