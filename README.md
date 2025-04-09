@@ -4,6 +4,9 @@
 
 A **Django-based web application** that allows users to **perform CRUD operations** (Create, Read, Update, Delete) after authentication. Users can **register, log in, log out**, and manage their data securely.  
 
+![image](https://github.com/user-attachments/assets/8c704b50-e78e-4f04-9a56-7d5fbf69b006)
+
+
 ![image](https://github.com/user-attachments/assets/e82523c2-bc97-4014-804c-edb8a47ca4cb)
 
 
