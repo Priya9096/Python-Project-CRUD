@@ -4,6 +4,9 @@
 
 A **Django-based web application** that allows users to **perform CRUD operations** (Create, Read, Update, Delete) after authentication. Users can **register, log in, log out**, and manage their data securely.  
 
+![image](https://github.com/user-attachments/assets/e82523c2-bc97-4014-804c-edb8a47ca4cb)
+
+
 | S.No | Video Title | Video Link |
 |------|-------------|------------|
 | 0 | 🔥 Video 0: Django MVT Architecture Explained | [Watch Video](https://youtu.be/Vr_XLiw6Y9Y?si=HR21vtu58B0jGcqW) |
