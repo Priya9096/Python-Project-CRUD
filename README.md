@@ -6,7 +6,7 @@ A **Django-based web application** that allows users to **perform CRUD operation
 
 | S.No | Video Title | Video Link |
 |------|-------------|------------|
-| 1 | 🔥 Video 1 : Django Setup:- Virtual Environment Explained! | [Watch Video](https://www.youtube.com/watch?v=1dU7mZL_J_A) |
+| 1 | 🔥 Video 1 : Django Setup:- Virtual Environment Explained! | [Watch Video](https://youtu.be/aGzDXEUeFgU?si=U1S7rttR_VgBVuPA) |
 | 2 | 🔥 Video 2: URL Mapping & Render Template in Django | [Watch Video](https://www.youtube.com/watch?v=6jHgzE6OGeA) |
 | 3 | 🔥 Video 3 : Understanding Models in Django | [Watch Video](https://www.youtube.com/watch?v=59yTc7UR_Co) |
 | 4 | 🔥 Video 4 : FoodMenu Model – Storing & Displaying Data on the Frontend | [Watch Video](https://www.youtube.com/watch?v=7BiRjF2bgSA) |
